@@ -1,1 +1,2 @@
-# fef-typing-game
+# fef-portfolio
+Front-End Foxes Portfolio
