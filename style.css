@@ -1,11 +1,17 @@
-@import url(stylesheet.css);
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('StarJedi.woff2') format('woff2'),
+        url('StarJedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
-  font-family: "Star Jedi", sans-serif;
+  font-family: 'Star Jedi';
   background-color: #030540;
   background: url(
-      https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg
-    )no-repeat;
+      https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg)no-repeat;
   background-size: cover;
   color: white;
 }
@@ -69,6 +75,7 @@ button {
   text-decoration: underline;
 }
 
+
 span:after {
   content: "";
   display: inline-block;
@@ -85,9 +92,7 @@ span:after {
   width: 60px;
   height: 34px;
   margin-left: 20px;
-  background: url(
-      https://i.ibb.co/J5kPkKN/Screen-Shot-2021-09-27-at-9-35-51-AM.png
-    )rightcenterno-repeat;
+  background: url(https://i.ibb.co/J5kPkKN/Screen-Shot-2021-09-27-at-9-35-51-AM.png) right center no-repeat;
   background-size: 70px;
 }
 
