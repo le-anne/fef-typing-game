@@ -1,248 +1,150 @@
-:root {
-    --primary: deeppink;
-    --spacing: 4rem;
-}
+@import url(stylesheet.css);
 
 body {
-    font-family: Arial, Helvetica, sans-serif;   
+  font-family: "Star Jedi", sans-serif;
+  background-color: #030540;
+  background: url(
+      https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg
+    )no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+main {
+  display: grid;
+  place-items: center;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 2rem;
 }
 
 h1 {
-    margin-bottom: 2rem;
-    font-size: 5vw;
-    font-weight: bold;
-    line-height: 1.4em;
-}
-
-h2 {
-    margin-bottom: var(--spacing);
-    text-align: center;
-    font-size: 3vw;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-h3 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-section {
-    padding: var(--spacing);
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 105%;
+  color: white;
 }
 
 p {
-    margin-bottom: 1em;
-    line-height: 1.4em;
+  text-align: center;
+  font-size: 1.6em;
 }
 
-blockquote {
-    margin-top: var(--spacing);
-    font-size: 2rem;
-    font-style: italic;
-    text-align: center;
+.error {
+  background-color: #BD050B;
 }
 
-cite {
-    display: block;
-    margin-top: 1rem;
-    font-style: normal;
-    font-size: 1rem;
+input {
+  width: 300px;
+  padding: 20px;
+  font-size: 2em;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: inset 1px 0px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
-.neutral-theme {
-    background-color: white;
-    --button-color: var(--primary);
-    --button-hover-color: white;
+.congrats {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  color: #FFD012;
 }
 
-.primary-theme {
-    color: white;
-    background-color: var(--primary);
-    --button-color: white;
-    --button-hover-color: var(--primary);
+button {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.6em;
+  background-color: white;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.button {
-    display: inline-block;
-    margin-right: 1rem;
-    padding: 1rem;
-    border: 2px solid var(--button-color);
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--button-color);
-    transition: all 0.3s ease-in-out;
+.highlight {
+  color: #FFD012;
+  text-decoration: underline;
 }
 
-.button:hover {
-    color: var(--button-hover-color);
-    background-color: var(--button-color);
+span:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
 }
 
-.header-highlight {
-    color: var(--primary);
+.winner {
+  background-image: url("https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg");
+  background-size: auto;
 }
 
-.header-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.rocket {
+  display: block;
+  width: 60px;
+  height: 34px;
+  margin-left: 20px;
+  background: url(
+      https://i.ibb.co/J5kPkKN/Screen-Shot-2021-09-27-at-9-35-51-AM.png
+    )rightcenterno-repeat;
+  background-size: 70px;
 }
 
-.header-link::after {
-    content: "";
-    width: 0;
-    height: 0;
-    margin-left: 1rem;
-    border-style: solid;
-    border-width: 0.75rem 0.5rem 0 0.5rem;
-    border-color: var(--primary) transparent transparent transparent;
-    transition: border-color 0.3s ease-in-out;
+.button:hover .rocket {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
-.header-link:hover::after {
-    border-color: white transparent transparent transparent;
+.started button:before {
+  content: "re";
 }
 
-
-.about {
-    position: relative;
-    margin-bottom: 100px;
+.started .rocket {
+  animation: zoomOutRight 1s;
+  animation-iteration-count: 1;
+  transform-origin: right center;
 }
 
-.about::after {
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 100px solid var(--primary);
-    border-right: 100vw solid transparent;
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
-.about-container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.about-img {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto var(--spacing);
-    filter: grayscale(100%);
-}
-
-.about-img:hover {
-    filter: grayscale(0);
-}
-
-@media (min-width: 800px) {
-    .about-container {
-        display: flex;
-        align-items: flex-start; 
-    }
-
-    .about-text {
-        margin-left: var(--spacing); 
-    }
-}
-
-article {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: var(--spacing);
-}
-
-.article-img {
-    margin-bottom: 2rem;
-}
-
-.contact {
-    text-align: center;
-}
-
-footer {
-    padding: var(--spacing);
-    text-align: center;
-    background-color: #333;
-    color: white;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--spacing);
-}
-
-.social-item {
-    margin: 0 2rem;
-}
-
-.social-link {
-    display: block;
-    width: 60px;
-    height: 60px;
-    font-size: 0;
-    background: no-repeat;
-    background-size: 60px;
-}
-
-.linkedin {
-    background-image: url(images/linkedin.svg);
-}
-
-.twitter {
-    background-image: url(images/twitter.svg);
-}
-
-.github {
-    background-image: url(images/github.svg);
-}
-
-.codepen {
-    background-image: url(images/codepen.svg);
-}
-
-.social-link:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-@media (min-width: 800px) {
-    .about-container {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .about-text {
-        margin-left: var(--spacing);
-    }
-
-    article {
-        flex-direction: row;
-        max-width: 960px;
-        margin: 0 auto var(--spacing);
-    }
-
-    .article-img {
-        max-width: 350px;
-        margin-left: 2rem;
-    }
-}
-
-.button:hover {
-    color: var(--button-hover-color);
-    background-color: var(--button-color);
+@keyframes zoomOutRight {
+  100% {
+    opacity: 0;
+    transform: scale(0.1) translate(500px, 0);
+  }
 }

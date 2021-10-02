@@ -1,90 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Front-End Foxes: Leanne's Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
 </head>
 
 <body>
-    <header class="neutral-theme">
-        <h1>Hello! My name is <span>Leanne Harris</span>.<br>I'm a Software Engineer.</h1>
-        <a href="#" class="button">Find out more</a>
-    </header>
-
     <main>
+        <h1>Star Wars Typing Game</h1>
+        <p>Practice your typing skills with a quote from Star Wars. <br>Click the start button to begin!</p>
 
-        <section class="about primary-theme">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <img class = "about-img" src="https://i.ibb.co/xD8VXxz/Screen-Shot-2021-09-13-at-11-53-47-AM.png" alt="a photograph of Leanne, a white latina woman smiling with a pink background." >
-               <div class="about-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sem non sapien mattis, eu ornare orci ultrices. Etiam tincidunt tincidunt interdum. Nam vehicula at orci sodales mollis. Cras sagittis sodales iaculis. Mauris faucibus massa a luctus malesuada. Suspendisse potenti. Integer rutrum quam vitae sollicitudin fringilla. Sed suscipit fermentum sem ut semper. Cras aliquet, velit eget ultricies tempus, enim sapien laoreet ligula, ac mattis ante sapien sit amet purus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sem non sapien mattis, eu ornare orci ultrices. Etiam tincidunt tincidunt interdum. Nam vehicula at orci sodales mollis. Cras sagittis sodales iaculis. Mauris faucibus massa a luctus malesuada. Suspendisse potenti. Integer rutrum quam vitae sollicitudin fringilla. Sed suscipit fermentum sem ut semper. Cras aliquet, velit eget ultricies tempus, enim sapien laoreet ligula, ac mattis ante sapien sit amet purus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sem non sapien mattis, eu ornare orci ultrices. Etiam tincidunt tincidunt interdum. Nam vehicula at orci sodales mollis. Cras sagittis sodales iaculis. Mauris faucibus massa a luctus malesuada. Suspendisse potenti. Integer rutrum quam vitae sollicitudin fringilla. Sed suscipit fermentum sem ut semper. Cras aliquet, velit eget ultricies tempus, enim sapien laoreet ligula, ac mattis ante sapien sit amet purus.</p>
-                <br><br><a href="https://www.canva.com/design/DAEnZygPAnA/vpw6q0f0PnJBztdOKOnGew/view?utm_content=DAEnZygPAnA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class = "button"> My Resume</a>
-            </div></div>
-<br><br>
-            <blockquote>
-                “my mom is cool and feeds me the best treats. hire her. she's cool.”
-                <cite>- my cat, Maddie</cite>
-            </blockquote>
-        </section>
-
-        <section class = "neutral-theme">
-            <h2>Projects</h2>
-            <article>
-                 <div class="article-text">
-                <h3>Typing Game</h3>
-                <p>A fun Star Wars typing game that runs in the browser. It uses modern browser things..</p>
-                <a href="https://very-fun-typing-game.glitch.me/">See it live.</a>
-                <a href="#">Fork it on Github</a>
-                 <img src="https://cdn.glitch.com/846ef6dc-91f3-42ab-836d-e8d9ba14ee4a%2FScreen%20Shot%202021-09-30%20at%2012.02.53%20PM.png?v=1633028602843" class="article-img" alt="placeholder alt text">
-            </article>
-
-            <article> 
-                <div class="article-text">
-                <h3>To-Do App</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sem non sapien mattis, eu ornare orci ultrices. Etiam tincidunt tincidunt interdum. Nam vehicula at orci sodales mollis. Cras sagittis sodales iaculis.</p>
-                <a href="#">See it live</a>
-                <a href="#">Fork it on Github</a>
-                 <img src="https://cdn.glitch.com/846ef6dc-91f3-42ab-836d-e8d9ba14ee4a%2FScreen%20Shot%202021-09-30%20at%2012.02.35%20PM.png?v=1633028590976" class="article-img" alt="placeholder alt text">
-            </article>
-
-            <article>
-                 <div class="article-text">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sem non sapien mattis, eu ornare orci ultrices. Etiam tincidunt tincidunt interdum. Nam vehicula at orci sodales mollis. Cras sagittis sodales iaculis.</p>
-                <a href="#">See it live</a>
-                <a href="#">Fork it on Github</a>
-                 <img src="https://i.ibb.co/pw8001j/project.jpg" class="article-img" alt="placeholder alt text">
-            </article>
-        </section>
-
-         <section class="contact primary-theme">
-            <h2>Contact</h2>
-             <p>Email me if you'd like to work together!</p>
-            <a href="leannevictoriaharris@gmail.com" class="button">Let's Talk</a>
-        </section>
+        <button type="button" id="start" class="button">&nbsp;&nbsp; start game <i class="rocket"></i></button>
+        <p id="quote"></p>
+        <p id="message"></p>
+        <input type="text" id="typed-value" />
     </main>
-
-       <footer>
-        <ul class="social">
-            <li class="social-item">
-                <a class="social-link linkedin" href="https://www.linkedin.com/in/hleanne/">LinkedIn</a>
-            </li>
-            <li class="social-item">
-                <a class="social-link twitter" href="https://twitter.com/leannedotcome">Twitter</a>
-            </li>
-            <li class="social-item">
-                <a class="social-link github" href="https://github.com/le-anne">GitHub</a>
-            </li>
-            <li class="social-item">
-                <a class="social-link codepen" href="https://codepen.io/leanne0">Codepen</a>
-            </li>
-        </ul>
-        <p>&copy; 2021 - Portfolio design by Jo Franchetti</p>
-    </footer>
 </body>
+
 </html>
