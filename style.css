@@ -26,8 +26,17 @@ h1 {
 }
 
 p {
+  max-width: 600px;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  line-height: 100%;
+}
+
+.force {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin-top: -5px;
+  margin-bottom: 25px;
 }
 
 .error {
@@ -56,7 +65,7 @@ button {
   padding: 20px;
   border: 0;
   border-radius: 50px;
-  font-size: 1.6em;
+  font-size: 1.3em;
   background-color: white;
   cursor: pointer;
   overflow: hidden;
@@ -74,8 +83,7 @@ span:after {
 }
 
 .winner {
-  background-image: url("https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg");
-  background-size: auto;
+    background-image: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2F6ob.gif?v=1620494080396);
 }
 
 .rocket {
@@ -83,9 +91,7 @@ span:after {
   width: 60px;
   height: 34px;
   margin-left: 20px;
-  background: url(
-      https://i.ibb.co/J5kPkKN/Screen-Shot-2021-09-27-at-9-35-51-AM.png
-    ) right center no-repeat;
+  background: url("https://i.ibb.co/YXpKcpM/Screen-Shot-2021-09-27-at-9-35-51-AM-1.png") right center no-repeat;
   background-size: 70px;
 }
 
@@ -103,6 +109,12 @@ span:after {
   animation-iteration-count: 1;
   transform-origin: right center;
 }
+
+button:hover {
+  box-shadow: 0 1.5em 1.5em -1.4em 3px);
+  transition: 1s ease-in-out;
+}
+
 
 @keyframes shake {
   0% {
