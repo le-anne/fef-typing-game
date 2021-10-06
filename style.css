@@ -1,4 +1,5 @@
 body {
+  font-family: "star_jediregular", 'Nunito Sans', sans-serif;
   background-color: #030540;
   background: url(https://i.ibb.co/qCZpz9d/Star-Wars-Space-Background-69-images.jpg) no-repeat;
   background-size: cover;
@@ -19,7 +20,7 @@ h1 {
   font-weight: bold;
   font-size: 4em;
   line-height: 105%;
-  color: white;
+  color: #EEDB00;
 }
 
 p {
@@ -82,7 +83,6 @@ span:after {
   margin-left: 20px;
   background: url(https://i.ibb.co/J5kPkKN/Screen-Shot-2021-09-27-at-9-35-51-AM.png) right center no-repeat;
   background-size: 70px;
-  z-index: 7777;
 }
 
 .button:hover .rocket {
@@ -142,3 +142,4 @@ span:after {
     transform: scale(0.1) translate(500px, 0);
   }
 }
+
