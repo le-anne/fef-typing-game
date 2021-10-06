@@ -85,4 +85,3 @@ function gameOver() {
 
 start.addEventListener("click", startGame);
 input.addEventListener("input", checkInput);
-
