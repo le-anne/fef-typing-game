@@ -34,7 +34,7 @@ p {
   font-size: 1em;
   letter-spacing: 0.1em;
   margin-top: -5px;
-  margin-bottom: 25px;
+  mmargin-bottom: 25px;
 }
 
 .error {
@@ -48,7 +48,6 @@ input {
   border: 0;
   border-radius: 25px;
   box-shadow: inset 1px 0px 5px 4px rgba(0, 0, 0, 0.2);
-  margin-top: -35px;
 }
 
 .congrats {
