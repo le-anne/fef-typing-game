@@ -78,7 +78,7 @@ function checkInput() {
 function gameOver() {
   const elapsedTime = new Date().getTime() - startTime;
   document.body.className = "winner";
-  message.innerHTML = `<span class="congrats">It, you did.</span> <br> Completed the game in ${elapsedTime /
+  message.innerHTML = `<span class="congrats">it, you did.</span> <br> completed the game in ${elapsedTime /
     1000} seconds, you have.`;
 }
 
