@@ -27,7 +27,7 @@ p {
   text-align: center;
   font-size: 1.4em;
   line-height: 100%;
-  font-family: "star_jediregular", 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .force {
@@ -55,6 +55,7 @@ input {
   font-size: 3em;
   font-weight: bold;
   color: #FFD012;
+  font-family: "star_jediregular", 'Nunito Sans', sans-serif;
 }
 
 button {
@@ -67,6 +68,7 @@ button {
   background-color: white;
   cursor: pointer;
   overflow: hidden;
+  font-family: "star_jediregular", 'Nunito Sans', sans-serif;
 }
 
 .highlight {
