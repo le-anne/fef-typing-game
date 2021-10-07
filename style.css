@@ -1,4 +1,5 @@
 body {
+  height: 90%;
   font-family: "star_jediregular", 'Nunito Sans', sans-serif;
   background-color: #00010f;
   background-size: cover;
@@ -28,12 +29,13 @@ p {
   font-size: 1.4em;
   line-height: 100%;
   font-family: 'Nunito Sans', sans-serif;
+  margin-top: -10px;
 }
 
 .force {
   font-size: 1em;
   letter-spacing: 0.1em;
-  margin-top: -5px;
+  margin-top: -8px;
   mmargin-bottom: 25px;
 }
 
