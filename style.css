@@ -50,6 +50,7 @@ input {
   border: 0;
   border-radius: 25px;
   box-shadow: inset 1px 0px 5px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -10px;
 }
 
 .congrats {
@@ -61,7 +62,7 @@ input {
 
 button {
   display: flex;
-  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 20px;
   border: 0;
   border-radius: 50px;
