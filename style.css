@@ -52,10 +52,9 @@ input {
 }
 
 .congrats {
-  text-transform: uppercase;
   font-size: 3em;
   font-weight: bold;
-  color: #FFD012;
+  color: #EEDB00;
   font-family: "star_jediregular", 'Nunito Sans', sans-serif;
 }
 
